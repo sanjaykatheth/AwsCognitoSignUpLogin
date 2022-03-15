@@ -1,20 +1,21 @@
 package com.awscognito.model;
 
 public class UserSignInRequest {
-    private String username;
+    private String mobile_no;
     private String email;
     private String password;
     private String newPassword;
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    public String getMobile_no() {
+		return mobile_no;
+	}
 
-    public String getEmail() {
+	public void setMobile_no(String mobile_no) {
+		this.mobile_no = mobile_no;
+	}
+
+	public String getEmail() {
         return email;
     }
 
