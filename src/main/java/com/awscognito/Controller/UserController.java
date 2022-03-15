@@ -89,9 +89,9 @@ public class UserController {
 			signUpRequest.setUserAttributes(attributeTypeList);
 
 			SignUpResult signUpResult = cognitoClient.signUp(signUpRequest);
-			
+
 			userService.saveUser(userSignUpRequest);
-	}
+		}
 
 		catch(CodeDeliveryFailureException e)
 		{
@@ -106,7 +106,7 @@ public class UserController {
 		}
 		catch(Exception e)
 		{
-		
+
 			return ResponseEntity.ok(e.getMessage());
 		}
 		msgres.setMessage("User Register Successfully");
